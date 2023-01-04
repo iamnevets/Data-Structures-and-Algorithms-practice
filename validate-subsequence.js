@@ -1,3 +1,10 @@
+/*
+QUESTION: Given two non-empty arrays, determine whether or not the second array 
+is a valid sub-sequence of the first array.
+*/
+
+
+// O(n) time and O(1) space
 const validateSubsequenceWithWhileLoop = (mainArray, subArray) => {
 	let mainPointer = 0;
 	let subPointer = 0;
@@ -17,6 +24,7 @@ const validateSubsequenceWithWhileLoop = (mainArray, subArray) => {
 };
 
 
+// O(n) time and O(1) space
 const validateSubSequenceWithForLoop = (mainArray, subArray) => {
       let subPointer = 0;
 
@@ -32,4 +40,6 @@ const validateSubSequenceWithForLoop = (mainArray, subArray) => {
                   subPointer++;
             }
       }
+
+	return false;
 }

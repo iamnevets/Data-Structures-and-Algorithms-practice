@@ -1,3 +1,10 @@
+/*
+Given an array integers sorted in increasing order, write a function that squares each value
+in the input array, also sorts it in increasing order and returns the array.
+*/
+
+
+// O(n) time and O(n) space
 const sortedSquaredArray = (array) => {
       let left = 0;
       let right = array.length - 1;
